@@ -130,6 +130,10 @@ label #sidebar_btn:hover {
   width: 80px;
 }
 
+#check:checked ~ .sidebar a:first-of-type{
+  margin-top: -100px;
+}
+
 .content {
   padding-top: 60px;
   margin-left: 250px;
@@ -178,11 +182,25 @@ label #sidebar_btn:hover {
   align-items: lleft;
   flex-direction: column;
   margin-left: 20px;
+  max-width: 330px;
+  transition: .1s;
+  transition-property: margin;
+}
+
+.blog-post:hover {
+  -webkit-box-shadow: 0px 3px 9px gray;
+  box-shadow: 0px 3px 9px gray;
+  margin-top: -16px;
 }
 
 .img-head {
-  width: 329px;
+  width: 330px;
   height: 187px;
+  background-size: cover;
+}
+
+.img-head:hover{
+  background-clip: border-box;
 }
 
 .post-title-con {
@@ -197,11 +215,23 @@ label #sidebar_btn:hover {
   color: rgba(0,0,0,.6);
 }
 
+.post-title-con h5 span {
+  background-color: #a61111;
+  padding: 3px 9px;
+  color: white;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
 .post-title-con h2 {
   margin: 15px 0 15px 10px;
-  color: #a61111;
-  font-size: 24px;
-  text-transform: uppercase;
+  /* color: #a61111; */
+  color: black;
+  font-size: 20px;
+  /* text-transform: uppercase; */
+  word-spacing: normal;
+  max-width: 330px;
 }
 
 .post-popular {
